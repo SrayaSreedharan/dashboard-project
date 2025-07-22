@@ -34,9 +34,9 @@ const Petcardgroup = () => {
 ];
 
   return (
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div className="card-grp" style={{ display: "flex", flexWrap: "wrap", }}>
       {Data.map((campaign, index) => (
-        <Petcard key={index} {...campaign} />
+        <Petcard  key={index} {...campaign} />
       ))}
     </div>
   );

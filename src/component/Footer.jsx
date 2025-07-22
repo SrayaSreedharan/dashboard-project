@@ -3,8 +3,10 @@ import '../App.css';
 
 const Footer = () => {
   return (
+     <div className="containers">
     <footer className="footer">
     </footer>
+    </div>
   );
 };
 
