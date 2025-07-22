@@ -99,13 +99,13 @@
   font-weight: 500;
 }
 
-  /* ==============Navbar section ================== */
-  .container{
+/* ==============Navbar section ================== */
+.container{
   display: flex;
   padding: 15px;
   gap: 15px;
-  }
-  .header {
+}
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,6 +138,92 @@
   border-radius: 50%;
   object-fit: cover;
 }
+
+/* =======================Pet cards============== */
+.card {
+  position: relative;
+  min-width: 350px;
+  max-height: 180px;
+  background-color: #1d9a6d;
+  color: white;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.card.blue {
+  background-color: #246bfd;
+}
+.card.green {
+  background-color: #1d9a6d;
+}
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+.icon-circle {
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+}
+.subtitle {
+  font-size: 12px;
+  margin: 0;
+  color: #f0f0f0;
+}
+.counts {
+  display: flex;
+  margin-top: 16px;
+  gap: 30px;
+}
+.label {
+  font-size: 12px;
+  color: black;
+  margin: 0;
+}
+.value1 {
+  font-size: 55px;
+  margin: 0;
+  font-weight: bold;
+}
+.value2 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+}
+.card-image {
+  position: absolute;
+  bottom: -5px;
+  right: 10px;
+  z-index: 0;
+}
+.card-image img {
+  height: 110px;
+  object-fit: contain;
+}
+
 /* ========== Responsive Header ========== */
 @media (max-width:450px) {
   .header {
