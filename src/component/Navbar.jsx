@@ -6,6 +6,7 @@ import { FiSettings } from 'react-icons/fi';
 import Sidebar from './Sidebar';
 import profile from '../images/profilepic.jpg';
 import Petcardgroup from '../Card/Petcardgroup';
+import Revenuestatus from '../statuscard/Revenuestatus';
 
 const Navbar = () => {
   return (
@@ -14,7 +15,6 @@ const Navbar = () => {
       <Sidebar />
       
       <div className="main-content">
-        {/* Header Section */}
         <header className="header">
           <div className="welcome-text">Hi Alaxander</div>
           <div className="header-icons">
@@ -24,9 +24,8 @@ const Navbar = () => {
             <img src={profile} alt="profile" className="profile-pic" />
           </div>
         </header>
-
-        {/* Petcardgroup Section BELOW header */}
         <Petcardgroup />
+        <Revenuestatus/>
       </div>
     </div>
      </div>
