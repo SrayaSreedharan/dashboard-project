@@ -1,12 +1,97 @@
+/* ========== Footer Section ========== */
 .footer {
-  background-color: #0d6efd; /* Bootstrap blue / match from image */
-  color: white;
-  text-align: center;
+  background-color: #0d6efd; 
   padding: 12px 20px;
+  max-width: 1920px;
+  height: 44px;
+}
+
+/* ========== Sidebar Section ========== */
+.sidebar {
+  width: 317px;
+  min-height: 100vh;
+  background-color: #fff;
+  padding-top: 43px;
+  padding-left: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.logo-button {
   position: relative;
-  bottom: 0;
+  width: 247px;
+  height: 51px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.half {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+.left-half {
+  left: 0;
+  background-color: #3b5998;
+}
+.right-half {
+  right: 0;
+  background-color: #34a853;
+}
+.logo-text {
+  position: absolute;
   width: 100%;
-  font-size: 14px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+/* ========== SidebarButton (Calendar) ========== */
+.sidebar-button {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  background-color: #f3f3f3;
+  width: 100%;
+  cursor: pointer;
+}
+.sidebar-button .icon {
+  color: #0d6efd;
+  font-size: 20px;
+  margin-right: 14px;
+}
+.sidebar-button .label {
+  color: #6c757d;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+}
+
+/* ========== Sidebar Text Items (Not Buttons) ========== */
+.sidebar-text-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  width: 100%;
+}
+.sidebar-text-item .icon {
+  color: #0d6efd;
+  font-size: 20px;
+  margin-right: 14px;
+}
+.sidebar-text-item .label {
+  font-size: 15px;
+  color: #6c757d;
+  font-weight: 500;
 }
