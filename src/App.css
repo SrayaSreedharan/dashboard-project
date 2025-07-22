@@ -228,7 +228,95 @@
   object-fit: contain;
 }
 
-/* ==================Dashboard section================= */
+/* ==================Revenuestatus card section================= */
+.Revenue-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+ 
+  flex-wrap: wrap;
+}
+.section {
+  background: #f0f8ff;
+  padding: 1rem;
+  border: 1px solid #3056A2;
+  border-radius: 10px;
+  width: 48%;
+}
+.section.blue-bg {
+  background: #d8eaff;
+  border: 1px solid #14A15F;
+}
+.card-groups {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 104px;
+}
+.cards {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 30%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card-headers {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.card-values {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.progress-bar {
+  background-color: #f0f0f0;
+  height: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.progress-fill {
+  height: 100%;
+  width: 70%; 
+}
+.progress-fill.red { 
+  background-color: red; 
+}
+.progress-fill.cyan {
+  background-color: #00acc1;
+}
+.progress-fill.purple {
+  background-color: #6c43ff; 
+}
+
+.card-value {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.unit-text {
+  color: #888888;
+  margin-right: 4px;
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+.value-text.red {
+  color: #e53935;
+}
+.value-text.cyan {
+  color: #00acc1;
+}
+.value-text.purple {
+  color: #6c43ff;
+}
+
+  
 
 /* ========== Responsive Header ========== */
 @media (max-width:450px) {

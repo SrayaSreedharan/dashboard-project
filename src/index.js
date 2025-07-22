@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Dashboard from './pages/Dashboard';
+import Revenuestatus from './statuscard/Revenuestatus';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Dashboard/>
+    {/* <Dashboard/> */}
+    <Revenuestatus/>
   </React.StrictMode>
 );
 
