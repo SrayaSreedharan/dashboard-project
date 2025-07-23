@@ -20,7 +20,7 @@ const Revenuestatus = () => {
   const revenue  = [
     { icon: <FaCoins />, title: "Total Income", value: 2354, color: "red", unit: "AED" },
     { icon:  <HiOutlineDocumentReport />, title: "Escrow Amount", value: 2354, color: "cyan", unit: "AED" },
-    { icon: <FaCoins />, title: "This Month Revenue", value: 2354, color: "purple", unit: "AED" },
+    { icon: <FaCoins />, title: "Month Revenue", value: 2354, color: "purple", unit: "AED" },
 ];
 
   return (

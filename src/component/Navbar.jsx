@@ -7,6 +7,7 @@ import Sidebar from './Sidebar';
 import profile from '../images/profilepic.jpg';
 import Petcardgroup from '../Card/Petcardgroup';
 import Revenuestatus from '../statuscard/Revenuestatus';
+import Calendar from '../calender/Calender';
 
 const Navbar = () => {
   return (
@@ -26,6 +27,7 @@ const Navbar = () => {
         </header>
         <Petcardgroup />
         <Revenuestatus/>
+        <Calendar/>
       </div>
     </div>
      </div>

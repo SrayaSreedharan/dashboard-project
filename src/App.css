@@ -6,9 +6,9 @@
 /* ========== Footer Section ========== */
 .footer {
   background-color: #0d6efd; 
-  padding: 12px 20px;
-  max-width: 1920px;
-  min-height: 34px;
+  height: 40px;
+   max-width: 1920px;
+   margin: 0 auto;
 }
 
 /* ========== Sidebar Section ========== */
@@ -107,7 +107,7 @@
 /* ==============Navbar section ================== */
 .container{
   display: flex;
-  padding: 15px;
+  padding: 20px;
   gap: 15px;
 }
 .header {
@@ -117,7 +117,7 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
-  max-width: 1563px;
+  /* min-width: 1563px; */
   margin-bottom: 20px;
 }
 .welcome-text {
@@ -137,8 +137,8 @@
   cursor: pointer;
 }
 .profile-pic {
-  width: 32px;
-  height: 32px;
+  max-width: 32px;
+  min-height: 32px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -151,8 +151,8 @@
   background-color: #1d9a6d;
   color: white;
   border-radius: 16px;
-  padding: 10px;
-  margin: 10px;
+  padding: 12px;
+  margin: 8px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
@@ -231,11 +231,13 @@
 /* ==================Revenuestatus card section================= */
 .Revenue-container {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  padding: 1rem;
- 
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border: 2px solid #0000001A;
+  padding: 10px;
+  /* max-width: 1563px; */
+  gap: 16px;
+  margin-top: 16px;
 }
 .section {
   background: #f0f8ff;
@@ -316,10 +318,101 @@
   color: #6c43ff;
 }
 
+/* ==================calender section================ */
+.fc-daygrid-day-frame {
+  background-color: #ffffff;
+  border-radius: 8px;
+  min-height: 67px ;
+  padding: 6px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.fc-button-active {
+  background-color: #dbeafe !important; 
+  color: #1e3a8a !important;          
+  box-shadow: none !important;
+}
+.fc-daygrid-day {
+  padding: 6px !important;
+  background-color: #f5f8fa;
+  box-sizing: border-box;
+  border: none !important;
+}
+.fc-scrollgrid,
+.fc-scrollgrid td,
+.fc-scrollgrid th {
+  border: none;
+}
+.calendar-container {
+  background-color: #f1f6fa;
+  max-width: 1088px;
   
+}
+.fc-col-header-cell {
+  padding: 6px;
+  background-color: #dbeafe;
+  color: #1e3a8a;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+.calendar-body {
+  display: flex;
+  gap: 20px;
+}
+.calendar-left {
+  flex: 1;
+  max-width: 800px;
+}
+.calendar-right {
+  width: 220px;
+  margin-top: 55px;
+}
+.legend{
+  background: white;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  width: fit-content;
+}
+.legend label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.fc .fc-button {
+  background-color: white;
+  color:#3B82F6;
+  font-size: 14px;
+  padding: 4px 10px;
+  min-width: 60px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: none;
+}
+.fc .fc-button:hover {
+  background-color: white;
+  color: #3B82F6;
+  border: none;
+  box-shadow: none;
+}
+.calender-layout{
+  max-width: 1088px;
+}
+.calendar-card{
+  border: 2px solid #0000001A;
+  padding: 10px;
+  
+  gap: 16px;
+  margin-top: 16px;
+}
 
 /* ========== Responsive Header ========== */
-@media (max-width:450px) {
+/* @media (max-width:450px) {
   .header {
     height: 45px;
     padding: 0 12px;
@@ -360,4 +453,4 @@
     align-items: flex-start;
   }
 }
-
+ */
