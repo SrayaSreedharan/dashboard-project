@@ -688,6 +688,47 @@
 
 /* ========== Responsive Header ========== */
 @media (max-width:450px) {
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+  .container {
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    flex-wrap: nowrap;
+  }
+
+  .welcome-text {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .header-icons {
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .profile-pic {
+    width: 28px;
+    height: 28px;
+    max-width: unset;
+    min-height: unset;
+  }
   .header {
     height: 45px;
     padding: 0 12px;
@@ -741,6 +782,26 @@
 
   .section {
     width: 100%; 
+  }
+  .calendar-body {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .calendar-left {
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .calendar-right {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .calendar-card,
+  .calendar-wrapper,
+  .calender-layout {
+    max-width: 100%;
   }
 }
 
