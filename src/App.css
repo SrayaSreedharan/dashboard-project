@@ -848,8 +848,19 @@ html, body {
     width: 100%;
   }
 
+  .calendar-body {
+    flex-direction: column;
+  }
+
   .calendar-right {
-    margin-top: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    margin-top: 12px;
+  }
+
+  .calendar-right .legend {
+    padding: 8px;
+    font-size: 14px;
   }
 
   .calendar-details-list {
