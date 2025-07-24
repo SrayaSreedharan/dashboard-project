@@ -739,7 +739,12 @@ html, body {
   }
 
    .welcome-text {
-    font-size: 13px;
+    font-size: 14px;
+    margin-left: 12px;
+  }
+
+  .header {
+    padding: 8px;
   }
 
   .header-icons .icon {
@@ -749,14 +754,6 @@ html, body {
   .profile-pic {
     width: 26px;
     height: 26px;
-  }
-
-  .header {
-    padding: 6px 10px;
-  }
-  .name {
-    font-size: 16px;
-    font-weight: bold;
   }
 
   .container {
