@@ -730,30 +730,18 @@ html, body {
     gap: 12px;
   }
 
-  .header {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px;
-    flex-wrap: nowrap;
-  }
-
-   .welcome-text {
-    font-size: 14px;
-    margin-left: 12px;
-  }
-
-  .header {
-    padding: 8px;
+  .welcome-text {
+    font-size: 13px;
+    margin-left: 10px;
   }
 
   .header-icons .icon {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .profile-pic {
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
   }
 
   .container {
