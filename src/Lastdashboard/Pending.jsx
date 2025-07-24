@@ -1,5 +1,7 @@
 import React from 'react';
 import img from '../images/martin.png'
+import "../App.css";
+
 
 
 const Pending = () => {
@@ -27,7 +29,7 @@ const Pending = () => {
 const styles = {
   container: {
   width: '100%',
-  maxWidth: '600px', // ⬅️ increased from 525px
+  maxWidth: '600px', 
   background: '#fff',
   border: '1px solid #eee',
   borderRadius: '10px',

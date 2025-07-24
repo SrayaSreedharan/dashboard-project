@@ -24,7 +24,7 @@
 /* ========== Sidebar Section ========== */
 .sidebar {
   max-width: 317px;
-  min-height: 1350px;
+  min-height: 1513px;
   background-color:#FDFDFD;
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1); 
   padding: 24px;
@@ -86,7 +86,6 @@
   border-bottom: 1px solid #eee;
   z-index: 999;
 }
-
 
 /* ========== SidebarButton (Calendar) ========== */
 .sidebar-button {
@@ -218,6 +217,7 @@
   font-size: 15px;
   font-weight: bold;
   margin: 0;
+  color: white;
 }
 .subtitle {
   font-size: 12px;
@@ -228,6 +228,7 @@
   display: flex;
   margin-top: 16px;
   gap: 30px;
+  color: white;
 }
 .label {
   font-size: 12px;
@@ -503,21 +504,17 @@
   border-radius: 50%;
   object-fit: cover;
 }
-
 .details {
   font-size: 14px;
 }
-
 .details strong {
   font-weight: 600;
 }
-
 .avatar-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .avatar-section img {
   width: 50px;
   height: 50px;
@@ -525,36 +522,29 @@
   object-fit: cover;
   margin-bottom: 5px;
 }
-
 .date-label {
   font-size: 13px;
   color: #2d74f8;
   font-weight: 500;
 }
-
-
 .details .date span {
   color: #2d74f8;
   font-weight: 500;
 }
-
 .payout-info {
   text-align: right;
 }
-
 .price-label {
   font-size: 12px;
   color: #888;
   margin: 0;
 }
-
 .payout-info h3 {
   margin: 5px 0;
   font-size: 20px;
   font-weight: 700;
   color: #222;
 }
-
 .payout-btn {
   background-color: #2d74f8;
   color: white;
@@ -565,7 +555,6 @@
   font-weight: 500;
   cursor: pointer;
 }
-
 .view-more-btn {
   background-color: #1d9b4c;
   color: white;
@@ -580,7 +569,7 @@
   display: flex;
   gap: 30px;
   margin-top: 20px;
-  flex-wrap: wrap; /* optional for responsiveness */
+  flex-wrap: wrap;
 }
 
 .calendar-payout-wrapper > * {
@@ -605,7 +594,6 @@
   margin: 0 auto;
   flex-wrap: nowrap;
 }
-
 .chart-box {
   flex: 1;
   min-width: 250px;
@@ -614,20 +602,15 @@
   padding: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
-
 .title-green {
   color: #0db760;
   margin-bottom: 1rem;
 }
-
 .chart-placeholder {
   height: 150px;
   border-radius: 8px;
   background: linear-gradient(to top, #e6fff0, #fff);
 }
-
-
-
 .pending-bookings {
   flex: 1;
   min-width: 300px;
@@ -636,13 +619,11 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
-
 .pending-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .booking-card {
   display: flex;
   justify-content: space-between;
@@ -657,7 +638,6 @@
   display: flex;
   gap: 0.75rem;
 }
-
 .avatar {
   width: 40px;
   height: 40px;
@@ -695,7 +675,6 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
 .btn-accept {
   background-color: #52c41a;
   color: white;
@@ -704,12 +683,9 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
 .blue {
   color: #1890ff;
 }
-
-
 
 /* ========== Responsive Header ========== */
 @media (max-width:450px) {
@@ -729,39 +705,29 @@ html, body {
     padding: 12px;
     gap: 12px;
   }
-
-   .header {
+  .header{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 12px;
-    background-color: #0052cc; /* Optional blue background */
-    color: white;
   }
 
-  .welcome-text {
+   .welcome-text {
     font-size: 13px;
-    margin-left: 10px;
-    white-space: nowrap;
-  }
-
-  .header-icons {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .header-icons .icon {
-    font-size: 16px;
-    color: white;
+    margin-left: 35px;
   }
 
   .profile-pic {
     width: 26px;
     height: 26px;
-    border-radius: 50%;
-    object-fit: cover;
   }
+  .header-icons{
+    margin-left: 180px;
+    margin-top: -30px;
+  }
+
+  .header-icons .icon {
+    font-size: 16px;
+    
+  }
+  
   .mobile-menu-button {
     position: absolute;
     top: 10px;

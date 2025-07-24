@@ -7,9 +7,6 @@ import { MdCheckCircleOutline } from 'react-icons/md';
 import { FaCoins } from 'react-icons/fa';
 import { HiOutlineDocumentReport } from 'react-icons/hi';
 
-
-
-
 const Revenuestatus = () => {
   const booking = [
     { icon: <FaPaw />, title: "Active", value: 100, color: "red" , withProgress:true },
