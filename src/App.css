@@ -915,4 +915,155 @@ html, body {
     background-color:  #1665D8;
   }
 }
+@media (min-width: 600px) and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+  }
+
+  .welcome-text {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+  }
+
+  .header-icons .icon {
+    font-size: 20px;
+  }
+
+  .profile-pic {
+    width: 32px;
+    height: 32px;
+  }
+
+  .mobile-menu-button {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 22px;
+    background-color: #1665D8;
+    color: white;
+    z-index: 999;
+  }
+
+  .sidebar {
+    width: 220px;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .card-grp {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    min-width: 100%;
+  }
+
+  .Revenue-container {
+    flex-direction: row;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .calendar-body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .calendar-left,
+  .calendar-right,
+  .calendar-card,
+  .calendar-wrapper,
+  .calender-layout {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .calendar-right {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 12px;
+  }
+
+  .dashboard-container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .chart-box,
+  .pending-bookings {
+    width: 100%;
+  }
+
+  .dashboard-wrapper {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .booking-card {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .booking-info {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .booking-actions {
+    text-align: right;
+    width: auto;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+}
 
