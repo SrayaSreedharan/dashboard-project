@@ -738,32 +738,22 @@ html, body {
     flex-wrap: nowrap;
   }
 
-  .welcome-text {
+   .welcome-text {
     font-size: 13px;
-    white-space: nowrap;
-    margin-left: 20px;
   }
 
-  .header-icons {
-    gap: 12px;
-    flex-shrink: 0;
+  .header-icons .icon {
+    font-size: 16px;
   }
 
-  .profile-info {
-    display: flex;
-    flex-direction: row;    
-    align-items: center;
-    gap: 10px;
-    margin: 16px 0;
+  .profile-pic {
+    width: 26px;
+    height: 26px;
   }
 
-  .profile-info img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
+  .header {
+    padding: 6px 10px;
   }
-
   .name {
     font-size: 16px;
     font-weight: bold;
