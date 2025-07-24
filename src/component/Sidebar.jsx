@@ -6,7 +6,7 @@ import { CgProfile } from "react-icons/cg";
 import { MdOutlineMarkChatUnread } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { MdOutlineShoppingBag } from "react-icons/md";
-import { FiMenu } from "react-icons/fi";  // hamburger menu icon
+import { FiMenu } from "react-icons/fi"; 
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,11 +21,9 @@ const Sidebar = () => {
 
   return (
     <>
-      {/* Mobile Menu Toggle */}
       <div className="mobile-menu-button" onClick={() => setIsOpen(!isOpen)}>
         <FiMenu size={24} />
       </div>
-
       <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
         <div className="logo-button">
           <span className="logo-text">Logo</span>
