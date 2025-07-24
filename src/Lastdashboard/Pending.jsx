@@ -51,11 +51,11 @@ const styles = {
   display: 'flex',
   justifyContent: 'space-between',
   backgroundColor: '#fafafa',
-  padding: '12px',                // smaller padding
+  padding: '12px',                
   maxWidth: '457px',
-  minHeight: '100px',             // reduced height
+  minHeight: '100px',            
   borderRadius: '10px',
-  marginBottom: '10px',           // smaller gap between cards
+  marginBottom: '10px',           
   border: '1px solid #eee'
 },
 

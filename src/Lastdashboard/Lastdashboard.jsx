@@ -5,7 +5,7 @@ import Pending from './Pending';
 
 const Lastdashboard = () => {
     const styles = {
-  container: {
+  containerss: {
     display: 'flex',
     justifyContent: 'space-between',
     // alignItems: 'stretch',    
@@ -18,7 +18,7 @@ const Lastdashboard = () => {
 };
 
   return (
-    <div style={styles.container}>
+    <div style={styles.containerss}>
       <Booking/>
       <Revenue />
       <Pending/>

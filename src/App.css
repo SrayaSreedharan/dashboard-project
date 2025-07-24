@@ -894,7 +894,7 @@ html, body {
     width: 36px;
     height: 36px;
   }
-  .dashboard-container {
+  .containerss {
     flex-direction: column;
     gap: 1rem;
   }
