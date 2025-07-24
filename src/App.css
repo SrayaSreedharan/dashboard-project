@@ -71,6 +71,24 @@
   font-size: 16px;
   pointer-events: none;
 }
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hamburger icon */
+.mobile-menu-button {
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 999;
+}
+
 
 /* ========== SidebarButton (Calendar) ========== */
 .sidebar-button {
@@ -922,6 +940,25 @@ html, body {
 
   .dashboard-wrapper > * {
     width: 100%;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 998;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-button {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
   }
 }
 
