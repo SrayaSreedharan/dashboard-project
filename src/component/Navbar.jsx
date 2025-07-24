@@ -8,13 +8,13 @@ import profile from '../images/profilepic.jpg';
 import Petcardgroup from '../Card/Petcardgroup';
 import Revenuestatus from '../statuscard/Revenuestatus';
 import Calendar from '../calender/Calender';
+import RequestPayout from '../Card/Requestpayout';
+import Lastdashboard from '../Lastdashboard/Lastdashboard';
 
 const Navbar = () => {
   return (
-    <div className="containers">
     <div className="container">
       <Sidebar />
-      
       <div className="main-content">
         <header className="header">
           <div className="welcome-text">Hi Alaxander</div>
@@ -27,10 +27,15 @@ const Navbar = () => {
         </header>
         <Petcardgroup />
         <Revenuestatus/>
-        <Calendar/>
+       <div className="calendar-payout-wrapper">
+        <div className="calendar-container">
+          <Calendar />
+        </div>
+       <RequestPayout />
+      </div>
+      <Lastdashboard/>
       </div>
     </div>
-     </div>
 
   );
 };

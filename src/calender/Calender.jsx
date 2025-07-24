@@ -14,7 +14,9 @@ const Calendar = () => {
             plugins={[dayGridPlugin]}
             initialView="dayGridMonth"
             initialDate="2024-11-01"
-            height="auto"
+            // min-height="458px"
+            showNonCurrentDates={false} 
+  fixedWeekCount={false}   
             headerToolbar={{
               start: 'prev,next today',
               center: '',

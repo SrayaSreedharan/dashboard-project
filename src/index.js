@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import Lastdashboard from './Lastdashboard/Lastdashboard';
 import Dashboard from './pages/Dashboard';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Dashboard/>
-    {/* <Calendar/> */}
-   
+    
+   <Dashboard/>
   </React.StrictMode>
 );
 

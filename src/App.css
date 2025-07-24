@@ -1,20 +1,30 @@
 .containers{
+  max-width: 1890px;
+  margin: 0 auto;
+}
+.main-content,
+.footer {
+  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+}
+.calendar-card,
+.request-payout-container{
+  max-width: 1920px;
 }
 
 /* ========== Footer Section ========== */
 .footer {
   background-color: #0d6efd; 
   height: 40px;
-   max-width: 1920px;
+   max-width: 1890px;
    margin: 0 auto;
 }
 
 /* ========== Sidebar Section ========== */
 .sidebar {
   max-width: 317px;
-  min-height: 1513px;
+  min-height: 1350px;
   background-color:#FDFDFD;
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1); 
   padding: 24px;
@@ -109,6 +119,7 @@
   display: flex;
   padding: 20px;
   gap: 15px;
+  /* max-width: 1920px; */
 }
 .header {
   background-color: #1665D8; 
@@ -117,7 +128,7 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
-  /* min-width: 1563px; */
+  max-width: 1700px;
   margin-bottom: 20px;
 }
 .welcome-text {
@@ -227,6 +238,13 @@
   height: 110px;
   object-fit: contain;
 }
+.card-grp {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px; /* space between cards */
+  margin-top: 20px;
+}
+
 
 /* ==================Revenuestatus card section================= */
 .Revenue-container {
@@ -322,7 +340,8 @@
 .fc-daygrid-day-frame {
   background-color: #ffffff;
   border-radius: 8px;
-  min-height: 67px ;
+ min-height: 65px;        
+  height: 65px;
   padding: 6px;
   height: 100%;
   box-sizing: border-box;
@@ -358,10 +377,14 @@
 .calendar-body {
   display: flex;
   gap: 20px;
+
+  max-width: 1068px;
+ 
 }
 .calendar-left {
   flex: 1;
   max-width: 800px;
+  max-height: 504px;
 }
 .calendar-right {
   width: 220px;
@@ -403,16 +426,268 @@
 .calender-layout{
   max-width: 1088px;
 }
-.calendar-card{
+.calendar-card {
   border: 2px solid #0000001A;
   padding: 10px;
-  
-  gap: 16px;
-  margin-top: 16px;
+  max-width: 1088px;
+  max-height: 554px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
+.calendar-wrapper {
+  background: #f6f9ff;
+  padding: 16px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+}
+
+
+/* ===============================Request Payout================= */
+.request-payout-container {
+  max-width: 400px;
+  max-height: 554px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.request-payout-container h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.payout-card {
+  display: flex;
+  max-width: 415px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fafafa;
+}
+
+.user-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.details {
+  font-size: 14px;
+}
+
+.details strong {
+  font-weight: 600;
+}
+
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.date-label {
+  font-size: 13px;
+  color: #2d74f8;
+  font-weight: 500;
+}
+
+
+.details .date span {
+  color: #2d74f8;
+  font-weight: 500;
+}
+
+.payout-info {
+  text-align: right;
+}
+
+.price-label {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+}
+
+.payout-info h3 {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+.payout-btn {
+  background-color: #2d74f8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.view-more-btn {
+  background-color: #1d9b4c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.calendar-payout-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* optional for responsiveness */
+}
+
+.calendar-payout-wrapper > * {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* ========================Dashboardlast================ */
+
+.dashboard-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.chart-box {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.title-green {
+  color: #0db760;
+  margin-bottom: 1rem;
+}
+
+.chart-placeholder {
+  height: 150px;
+  border-radius: 8px;
+  background: linear-gradient(to top, #e6fff0, #fff);
+}
+
+/* Optional: for real charts you can use chart.js or recharts */
+
+.pending-bookings {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.pending-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-top: 1rem;
+}
+
+.booking-info {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.booking-actions {
+  text-align: right;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-view {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-reject {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-accept {
+  background-color: #52c41a;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.blue {
+  color: #1890ff;
+}
+
+
+
 /* ========== Responsive Header ========== */
-/* @media (max-width:450px) {
+@media (max-width:450px) {
   .header {
     height: 45px;
     padding: 0 12px;
@@ -452,5 +727,20 @@
     padding-left: 0;
     align-items: flex-start;
   }
+
+  .card-grp {
+    grid-template-columns: 1fr; 
+  }
+
+  .card {
+    min-width: 100%;
+  }
+  .Revenue-container {
+    flex-direction: column;
+  }
+
+  .section {
+    width: 100%; 
+  }
 }
- */
+
