@@ -3,6 +3,8 @@ import img from '../images/martin.png'
 
 
 const Pending = () => {
+  const isMobile = window.innerWidth <= 450;
+
     const bookings = [
   {
     id: 1,
@@ -48,7 +50,7 @@ const styles = {
     textDecoration: 'none'
   },
   card: {
-  display: 'flex',
+    display: isMobile ? 'block' : 'flex',
   justifyContent: 'space-between',
   backgroundColor: '#fafafa',
   padding: '12px',                
@@ -88,10 +90,11 @@ const styles = {
     marginLeft: '4px'
   },
   rightSection: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    alignItems: 'flex-end'
+   flexDirection: isMobile ? 'row' : 'column',
+    justifyContent: isMobile ? 'space-between' : 'space-between',
+    alignItems: isMobile ? 'center' : 'flex-end',
+    marginTop: isMobile ? '12px' : '0',
+    gap: isMobile ? '12px' : '0'
   },
   
   price: {
@@ -104,7 +107,8 @@ const styles = {
   actions: {
     display: 'flex',
     gap: '8px',
-    marginTop: '8px'
+    justifyContent: isMobile ? 'flex-start' : 'flex-end',
+    marginTop: isMobile ? '0' : '8px'
   },
   viewButton: {
     backgroundColor: '#dceeff',
